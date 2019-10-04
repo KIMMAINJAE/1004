@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role"page" id="page1" data-title="첫 번째 이야기">
+		<div data-role="header">
+			<h1></h1>
+		</div>
+		<div data-role="content">
+			<a href="#page123">페이지123</a>
+		</div>
+		<div data-role="footer">
+			<h4>내부링크 방식</h4>
+		</div>
+	</div>
+
+	
+	<div data-role"page" id="page2" data-title="두 번째 이야기">
+		<div data-role="header">
+			<h1>두번째 페이지</h1>
+		</div>
+		<div data-role="content">
+			<p>페이지 전환 애니메이션 효과</p>
+			<a href="#page123" data-direction="reverse">페이지</a><br/>
+			<a href="#page312"> 페이지 312 기본 전환효과 적용</a><br/>
+			<a href="#page312" data-direction="slide"></a>페이지312 slide 적용<br/>
+			<a href="#page312" data-direction="slideup"></a>페이지312 slide 적용<br/>
+			<a href="#page312" data-direction="slidedown"></a>페이지312 slide 적용<br/>
+			<a href="#page312" data-direction="flip"></a>페이지312 slide 적용<br/>
+			<a href="#page312" data-direction="fade"></a>페이지312 slide 적용<br/>
+			<a href="#page312" data-direction="pop"></a>페이지312 slide 적용<br/>
+			<a href="#page312" data-direction="none"></a>페이지312 slide 적용<br/>
+		</div>
+		<div data-role="footer">
+			<h4>내부링크 방식</h4>
+		</div>
+	</div>
+		
+
+
+		<div data-role"page" id="page3" data-title="세 번째 이야기">
+		<div data-role="header">
+			<h1></h1>
+		</div>
+		<div data-role="content">
+			<a href="#page123">페이지123</a>
+			<a href=#somepage" data-rel="back">페이지213</a>
+		</div>
+		<div data-role="footer">
+			<h4>내부링크 방식</h4>
+		</div>
+	</div>
+</body>
+</html>
